@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+}
+
+.panel {
+    position: relative;
+
+    margin: 10px;
+    width: 10%;
+    height: 80vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 50px;
+
+    transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+}
+
+.panel.active {
+    width: 60%;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
