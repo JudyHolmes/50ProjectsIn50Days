@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-image: url('https://image.uisdc.com/wp-content/uploads/2018/12/uisdc-jl-20181224-42.jpg');
+
+    text-align: center;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+
+    overflow: hidden;
+}
+
+.btn {
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 5px;
+
+    background-color: pink;
+    color: #fff;
+
+    font-size: 1.2rem;
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:focus {
+    outline: none;
+}
