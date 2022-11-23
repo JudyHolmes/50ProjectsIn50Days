@@ -1,0 +1,23 @@
+{
+  "id": "3787584",
+  "name": "day12-FAQ Collapse",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577310",
+      "name": "关闭2-fill",
+      "font_class": "guanbi2fill",
+      "unicode": "e724",
+      "unicode_decimal": 59172
+    },
+    {
+      "icon_id": "12705539",
+      "name": "下拉箭头",
+      "font_class": "xialajiantou",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

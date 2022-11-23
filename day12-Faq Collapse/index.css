@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.faq {
+    position: relative;
+
+    margin: 20px 0;
+    padding: 30px;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    background-color: transparent;
+
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: '\f075';
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    font-size: 7rem;
+    font-family: 'Font Awesome 5 Free';
+    color: #2ecc71;
+
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.faq.active::before {
+    top: -10px;
+    left: -30px;
+
+    color: #3498db;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .icon-guanbi2fill {
+    display: none;
+}
+
+.faq.active .faq-toggle .icon-guanbi2fill {
+    color: #fff;
+    display: block;
+}
+
+.faq.active .faq-toggle .icon-xialajiantou {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #9fa4a8;
+}
